@@ -1,0 +1,73 @@
+<!-- Event listening -->
+<!-- An HTML event can be something the browser does or something a user does. -->
+<!-- Here are some examples of HTML events:
+
+An HTML web page has finished loading
+An HTML input field was changed
+An HTML button was clicked -->
+<!-- Often, when events happen, you may want to do something. -->
+<!-- JavaScript lets you execute code when events are detected. -->
+<!-- HTML allows event handler attributes, with JavaScript code, to be added to HTML elements. -->
+
+<!-- Here is a list of some common HTML events-
+
+Onchange-An HTML element has been changed
+Onclick-The user clicks an HTML element
+Onmouseover-The user moves the mouse over an HTML element
+Onmouseout-The user moves the mouse away from an HTML element
+Onkeydown-The user pushes a keyboard key
+Onload-The browser has finished loading the page -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-10</title>
+    <style>
+        #btn{
+            padding: 12px;
+            color: red;
+            border: 2px solid red;
+            font-weight: bold;
+            background-color: rosybrown;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">This is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae necessitatibus debitis optio, dolor facilis itaque laudantium eveniet obcaecati laboriosam architecto officiis deleniti cumque! Voluptates numquam corrupti accusamus dolore dolorum maiores libero quo minus hic ducimus incidunt voluptatum, deleniti eius nisi voluptate vel neque fugit quisquam soluta ab pariatur esse, consequatur voluptatibus. Laboriosam repellendus esse veniam atque sapiente similique consequuntur quaerat illum modi? Harum sequi quasi facilis voluptatem ipsa laboriosam cumque molestiae voluptates velit culpa aspernatur autem quas, quam repudiandae ad vitae cum delectus, eveniet praesentium rerum ea hic tempora obcaecati. Repellendus placeat quod, reprehenderit fugiat consequatur veritatis ipsa eaque delectus. Tempora quisquam corrupti at omnis! Quaerat ad explicabo ipsa ipsum, repellendus iste commodi inventore ea rem eveniet excepturi ex earum blanditiis fugit sed iure laborum dolorem iusto dolorum. Sapiente saepe fugiat quo recusandae incidunt pariatur at consequatur laboriosam tempora modi, quisquam, quibusdam consectetur eaque a unde dolor rerum consequuntur quae corrupti, corporis vel? Esse ut nemo fugiat beatae dolor nobis, odit temporibus nulla voluptatibus architecto suscipit facilis magnam laboriosam nihil quae fugit vero at a deleniti modi cupiditate quo corporis! Perferendis animi nam ipsum! Culpa quaerat impedit optio doloribus pariatur, laboriosam adipisci reiciendis cupiditate laudantium exercitationem, provident sequi est neque praesentium! Ipsam totam voluptate laboriosam. Odit temporibus quae, repellat libero corporis sed necessitatibus a facilis eligendi tenetur dolor doloribus? Inventore excepturi beatae quae, illum voluptatem officiis architecto dolores placeat dolorum.</p>
+
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover' ,function run(){
+            //   alert('Mouse Inside')
+            console.log('Mouse Inside')
+        });
+        para.addEventListener('mouseout' ,function run(){
+            //   alert('Mouse now went Outside')
+            console.log('Mouse now went Outside')
+        });
+        function toggleHide() {
+            // let para=document.getElementById('para');
+            // let btn =document.getElementById('btn');
+            // Even without using para,btn we can poingt to id-para and btn.
+            // if para=2 then it will give error as we override para.  
+            if(para.style.display!='none'){
+                para.style.display='none';
+            }else{
+                para.style.display='block';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!-- Media query -->
+<!-- Media queries are used when we want to customize our website's presentation according to the user's screen size. With the help of media queries, you can display different markups based upon the device's general type(mobile, desktop, tablet).
+A media query is a logical operation. Whenever a media query becomes true, then the related CSS is applied to the target element. -->
+
+<!-- A media query is composed of two things: media type and expression. A media query can contain one or more expressions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-12</title>
+    <style>
+        .box {
+            text-align: center;
+            background-color: rgba(255, 196, 0, 0.959);
+            color: white;
+            font-size: 50px;
+            display: none;
+        }
+        /*  have used the chrome developer tools to change the page's width. You can see that the media query is applied when the page's width is set to 400px. So whenever the page width is 400px or more than 400px, then the media query for the box1 will be applied because we have set the minimum width to 400px */
+        /* @media (max-width: 400px){
+            #box1{
+                display: block;
+                background-color: rosybrown;
+            } */
+        @media only screen and(min-width:300px) and (max-width:500px) {
+            #box2{
+                display: block;
+                background-color: teal; 
+            }
+        }
+        @media only screen and(min-width:500px) and (max-width:800px) {
+            #box3{
+                display: block;
+                background-color: rgb(134, 12, 53); 
+            }
+        }
+        @media (min-width:800px)  {
+            #box4{
+                display: block;
+                background-color: rgb(12, 134, 87); 
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">main ek Windows hun</div>
+    <div class="box" id="box2">main ek Macos hun</div>
+    <div class="box" id="box3">main ek Kali linux hun</div>
+    <div class="box" id="box4">main ek Android hun</div>
+</body>
+</html>

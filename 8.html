@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-7</title>
+    <style>
+        /* The next problem which arises is that when we stretch the full width of the page, the text in the heading moves towards left. So to move it towards the center, we can set the property of text-alignment as center.
+        Display inline means it will take the space according to the size of the element. Display block means we can set its width and by margin manually. */
+        /* Now suppose we want to make an element inline as well as customize its width too, then in that case we can use inline-block */
+        header{
+            margin: auto;
+            border: 2px solid red;
+            width: 80%;
+        }
+        img{
+            margin: auto;
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+        .box{
+            border: 4px solid black;
+            background-color: gray;
+            margin: 4px;
+            padding: 23px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- CSS DISPLAY PROPERTY -->
+    <header class="top">
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="Image not found">
+        <h3>Welcome to madhav's blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto facere animi voluptates dicta cumque tenetur dignissimos consectetur provident hic facilis corrupti, ipsam saepe expedita necessitatibus praesentium aperiam exercitationem doloribus! Culpa fugit alias perspiciatis reiciendis?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto facere animi voluptates dicta cumque tenetur dignissimos consectetur provident hic facilis corrupti, ipsam saepe expedita necessitatibus praesentium aperiam exercitationem doloribus! Culpa fugit alias perspiciatis reiciendis?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto facere animi voluptates dicta cumque tenetur dignissimos consectetur provident hic facilis corrupti, ipsam saepe expedita necessitatibus praesentium aperiam exercitationem doloribus! Culpa fugit alias perspiciatis reiciendis?</p>
+        </div>
+    </div>
+</body>
+</html>

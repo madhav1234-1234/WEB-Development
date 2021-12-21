@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-9</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            z-index: 15;
+            top: 49px;
+            background-color: green;
+        }
+        #box2{
+            /* visibility-hidden and dispaly-none both hide the thing but visibility doesnot remove the space
+            whereas dispaly remove the space also */
+            /* visibility: hidden; */
+            /* display: none; */
+            /* z-index works for position whose z-index is greater comes up */
+            /* z-index will work only for position:relative,absolute,fixed or sticky */
+            z-index: 34;
+            position: relative;
+            top: 14px;
+            background-color: red;
+        }
+        #box3{background-color: blue;}
+        #box4{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <!-- VISIBILITY AND Z-INDEX -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

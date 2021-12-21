@@ -1,0 +1,45 @@
+<!-- Variable and custom properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-17</title>
+    <style>
+        /* way to make it global variable */
+        :root{
+            --primary-color:yellow;
+            --box-color:red;
+            --danger-color:blue;
+            --maxw:333px;
+        }
+        .box{
+            --box-color:rgb(0, 255, 128); /*can say this is a local variable which can be accesed in this class only*/
+            width: 200px;
+            height: 200px;
+            background-color:var(--primary-color); 
+            border: 2px solid var(--box-color);
+            box-shadow: 3px 3px var(--danger-color);
+            margin: 2px 9px;
+        }
+        .container{
+            /* --box-color:rgb(206, 22, 31); */
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

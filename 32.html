@@ -1,0 +1,69 @@
+<!-- Array and objects -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-5</title>
+</head>
+<body>
+    <div class="container">Simple si html</div>
+    <script>
+        // The object class represents one of JavaScript’s data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor.
+
+        // we have two types of values used in JavaScript- primitive and reference. To be more simple, either we create objects or primitive data types
+
+        // The primitive data types are as follows-
+        let myVar=34;
+        let myVar2="string";
+        let myVar3=true;
+        let myVar4=null;
+        let myVar5=undefined;
+        // Apart from primitive data types, all the other are objects.
+
+        let employee={
+            name:"maddy",
+            salary:5,
+            channel:"gun shop owner",
+            channel2:"missile shop",
+        }
+        console.log(employee);
+        console.log(employee.channel2);
+        console.log(employee['channel2']);
+
+
+        // n this example, an employee is an object that contains the name, salary, channel, and channel 2 inside it. This is an example, where we create  objects manually by us. 
+
+
+        // ARRAYS
+        // There is a special kind of object known as Arrays. The JavaScript Array class is a global object that is used in the construction of arrays; which are high level, list-like objects. An array is a special variable, which can hold more than one value at a time. 
+
+        let names=[1,2,4,"Maddy",undefined];
+        console.log(names);
+        console.log(names[1]);
+        // An array can contain any type of value in it whether it is a string, integer, or boolean.
+
+        // An array can contain any type of value in it 
+        // whether it is a string, integer, or boolean.
+
+        // We can also create arrays with the help of a new keyword 
+        let names1 =new Array(11,25,4,"Maddy",undefined);
+        names1.push("This is pushed");
+        console.log(names1);
+
+
+        // To know the length of an array, we can use the length function
+        console.log(names1.length);
+
+        // to sort this array, we can use sort() function
+        names1 = names1.sort();
+        console.log(names1);
+
+        let names=new Array(23);
+        // It allocate 23 empty spaces.
+
+
+    </script>
+</body>
+</html>

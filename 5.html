@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            /* The auto property of margin allows to automatically adjust the margin equally on the both the ends */
+            margin: 33px auto;
+            background-color: royalblue;
+        }
+
+        .item {
+            border: 2px solid gray;
+            margin: 12px 3px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 12px 3px;
+            background-color: rgb(247, 168, 168);
+        }
+
+        /* The CSS clear property specifies what elements can float beside the cleared element and on which side. */
+        /* Left- The elements floats to the left of its container.
+           Right- The elements floats to the right of its container.
+           None- The element does not float (it will be displayed just where it occurs in the text). This is default.
+           Inherit- The element inherits the float value of its parent. */
+        #fruits {
+            /* The CSS float property specifies how an element should float. */
+            /*  The float property is used for positioning and formatting content */
+            float: left;
+            width: 48%;
+        }
+
+        #computers {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            /* clear: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        p,h3 {
+            /* text-align: right; */
+            /* text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: auto;
+            width: 455px;
+        }
+
+        /* We donot use float and clear much ,instead we use flexbox */
+    </style>
+</head>
+
+<body>
+    <!-- ALIGNMENT -->
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quas tempore
+                laborum aspernatur tempora distinctio corporis consectetur quis dicta? Unde ipsam ratione nostrum
+                placeat temporibus, reiciendis esse repellendus fuga accusantium. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Velit, nihil. Amet perspiciatis quod odio facere, quas recusandae
+                repudiandae totam, atque cum enim perferendis consectetur voluptatem! Incidunt nihil, ipsa tempora
+                repellat totam voluptatum blanditiis harum.</p>
+        </div>
+        <div id="computers" class="item">
+            <h3>Computers</h3>
+            <p id="computerspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rerum
+                quisquam laboriosam inventore hic ipsum, atque nulla debitis nemo! Voluptatibus aspernatur magnam eius
+                ex ducimus. Facilis distinctio odit rerum nihil! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Soluta dolorem ipsa, repudiandae, tempore excepturi debitis consequatur adipisci itaque illum
+                similique perspiciatis officiis aperiam sapiente. Perferendis illo repellendus odit eaque, ea
+                consectetur voluptatibus architecto cum!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+                architecto, libero itaque sapiente voluptatem repellendus quas nihil, possimus natus dicta tenetur vero
+                nisi? Mollitia eligendi incidunt id fugiat ipsa saepe.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+                architecto, libero itaque sapiente voluptatem repellendus quas nihil, possimus natus dicta tenetur vero
+                nisi? Mollitia eligendi incidunt id fugiat ipsa saepe.</p>
+        </div>
+    </div>
+</body>
+
+</html>

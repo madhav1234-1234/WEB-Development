@@ -1,0 +1,158 @@
+<!-- we can use ctrl+/ to comment  -->
+<!-- HTML stands for hypertext markup language -->
+<!-- It is basically a standard markup language for giving a static skeleton to web application and websites. -->
+<!-- HTML contains opening nad closing tag <(opening) />(closing) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML1</title>
+</head>
+<body>
+    <!-- heading tag   h1,h2,h3,h4,h5,h6=from largest to samllest -->
+    <h1>Madhav</h1>
+    <h2>Madhav</h2>
+    <h3>Madhav</h3>
+    <!-- p is for paragraph -->
+    <p>this is my name</p>
+    <!-- if we want to write some arbitrary words we can use lorem x(number of words we want) -->
+    <!-- we can use alt+z to make lines in one view -->
+    <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia hic numquam ipsum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis velit voluptatibus a cumque placeat facere molestias aliquam. Provident neque quidem earum blanditiis fuga. Numquam rem unde dolor possimus. <strong>this is strong</strong> Aperiam magni omnis architecto modi ab pariatur, quod explicabo. Architecto, ducimus laudantium omnis optio <em>This is emphaasized</em> assumenda nemo, explicabo quaerat nisi blanditiis <br> unde accusamus, repellendus praesentium eius aliquam sequi. Delectus commodi, animi molestiae modi quis consequatur, explicabo corporis eos voluptatum error dolorem doloremque. Hic, suscipit quam aperiam nam ex, voluptas modi ab similique libero dignissimos minus. Earum aperiam itaque sapiente tempore voluptas suscipit? </p>
+    <!-- we can use strong to bold -->
+    <!-- we can use em to emphasize -->
+    <!-- bold and italic tag can also be used but strong and em is more preferable -->
+    <!-- HTML ignore extra spaces -->
+    <!-- To give extra line we can use br(break) but br is self closing ,not very good practice to use-->
+    <!-- hr(horizontal rule) is used to give ruling line it is also self closing -->
+    <hr>
+    <!-- if we want 4 paragraph we can simply write p*4+enter -->
+    <!-- ctrl+enter to come to a new line -->
+    <p>one</p>
+    <p>two</p>
+    <p></p>
+    <p></p>
+    <!-- to provide link we can use a(anchor)+enter -->
+    <!-- we will use target="_blank" if we want link to open in an browser -->
+    <!-- a is a tag and href is an attribute , basically attribute gives property to the tag-->
+    <a href="https://www.google.co.in/"target="_blank">Go to google</a><br>
+    <a href="https://www.facebook.co.in/"target="_blank">Go to facebook</a><br>
+    <a href="https://www.instagram.co.in/"target="_blank">Go to instagram</a><br>
+    <!-- to insert image we can use img+enter ,if image is not loading we will use message to show there -->
+    <img src="https://source.unsplash.com/user/erondu/600x200" alt="Error loading image">
+
+    <!-- list -->
+    <!-- ul-unordered list and ol-ordered list -->
+    <!-- in ul-the list will be represented in the form of dots -->
+    <ul type="square">
+        <li>This is first item</li>
+        <li>This is second  item</li>
+        <li>This is third item</li>
+    </ul>   
+    <!-- in ol-the list will be represented in the form of 1,2,3 or a,b,c -->
+    <ol type="A">
+        <li>This is first item</li>
+        <li>This is second  item</li>
+        <li>This is third item</li>
+    </ol>
+       <!--ol and ul can also be nested  -->
+
+       <!--Tables  -->
+       <!-- thead=table head  ,tbody=table body  ,th=table head  ,tr=table row  ,td=table data -->
+       <!-- Table contains two things head and body -->
+       <h3>Table</h3>
+       <table>
+           <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>EMPID</th>
+                    <th>EMPNO</th>
+                </tr>
+           </thead>
+           <tbody>
+                 <tr>
+                     <td>Mad</td>
+                     <td>asw3</td>
+                     <td>123</td>
+                 </tr>
+                 <tr>
+                     <td>ayu</td>
+                     <td>asw4</td>
+                     <td>1234</td>
+                 </tr>
+                 <tr>
+                     <td>ashu</td>
+                     <td>asw5</td>
+                     <td>12356</td>
+                 </tr>
+           </tbody>
+       </table>
+
+       <!-- Forms -->
+       <h2>This is form</h2>
+       <!-- Whenever we add a <form> tag in the HTML, it is going to ask for some action for submitting that particular form in the backend for future reference. So, for now, we will write it as backend.php. All the data submitted in a form will be stored automatically in the backend “backend.php” after submitting it. -->
+        <!-- Then comes the <input>tags which are present inside the form, where the user provides the input. These inputs can be of any type whether text, button, checkbox, date, time, etc. Input Tags are used to create interactive controls for web-based forms in order to accept data from the user.  -->
+       <form action="backend.php">
+           <label for="name">Name</label>
+         <!-- The name here is used so that the backend can recognize the tag that we are using. -->
+        <div>
+            <input type="text" name="myName" id="name" >
+        </div>
+        <div>
+            RollNo: <input type="number" name="myRoll" >
+        </div>
+        <div>
+            Email: <input type="email" name="myEmail" >
+        </div>
+        <div>
+            <input type="date" name="myDate" >
+        </div>
+        <div>
+            <input type="time" name="myTime" >
+        </div>
+        <div>
+           Are u eligible: YES <input type="radio" name="eligibility" >  NO <input type="radio" name="eligibility" >
+        </div>
+        <div>
+            Are u 18+: <input type="checkbox" name="voter" >
+        </div>
+        <div>
+            Write about urself: <br><textarea cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Ind">Indica</option>
+                <option value="swi">Swift</option>
+                <option value="bmw">BMW</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+
+        </div>
+    
+       </form>
+
+       <!-- Inline and Block elements  -->
+       <!-- Inline elements are those elements which only occupy the space bounded by the tags defining the element, instead of breaking the flow of element. On the other hand, block-level elements take up the entire space of its parent element. -->
+       <!-- The <span> is an in-line element and <div> is a block element -->
+       <!-- p is a block element -->
+           <p>This is a paragraph</p>
+           <p>This is second paragraph</p>
+           <span>this is a paragraph</span>
+           <span>this is second paragaraph </span>
+
+        <!-- ID AND CLASSES -->
+        <!-- The ID(identifier) is an identifier which must be unique in the whole HTML document. It is used to find an element while linking, scripting, or styling. Whereas, Classes allow CSS and JavaScript to select and access specific elements -->
+        <!--  (.)is for class and (#) is for id  -->
+        <div id="mainBox" class="redBg">
+             <!-- Detailed study in css -->
+
+        </div>
+
+
+</body>
+</html> 

@@ -1,0 +1,43 @@
+<!-- setInterval and setTimeOut -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-11</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is my adda');
+        // The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds. This function is only executed once.
+        // Use the clearTime() method to prevent the function running.
+        let name='maddy';
+        function greet(name ,byeText){
+            console.log("Hello Good night " + name + " " + byeText);
+        }
+        timeOut= setTimeout(greet, 5000, "Harry", "Take care");//5000ms-5sec
+        console.log(timeOut);
+
+        // We can also pass more arguments in this function. One thing to note here is we can never pass the function in setTimeout. Else it returns the output immediately irrespective of what time interval you have set.
+        // To clear the timeout, we can use the function clearTimeout().
+        clearTimeout(timeOut);
+        // let us see how the setInterval function is used. It calls a function or evaluates an expression at specified intervals in milliseconds. It will continue calling the function until clearInterval() function is called or the window is closed
+
+        intervalId=setInterval(greet,1000,"Maddy","Good night");
+        // To stop this, we have to use clearInterval() 
+        clearInterval(intervalId);
+
+
+        function displayTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>

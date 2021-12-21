@@ -1,0 +1,62 @@
+<!-- /* CSS stands for cascading style sheet */
+/* CSS gives style to raw HTML
+It stands for Cascading Style Sheets
+CSS is used to give style to our web pages
+CSS is used to make websites responsive
+CSS takes the responsibility of design in your websites */
+/* syntax:-  selector{ property:value;}    e.g.-p{color:blue;} */
+/* There are three ways to Add CSS-
+Inline CSS- CSS is added to the elements directly using the style attributes.
+Internal CSS- CSS is kept inside the head tags in <style> tags
+External CSS- CSS is kept separately inside a .CSS style sheet. It involves two steps-
+First, write the CSS in.CSS file.
+Include that CSS file to Markup. */
+Selectors-used to find element whose property will be set  ,it is used to target the html elements.
+Types of selector   css element selector,css id selector,css class selector,the css grouping selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-1</title>
+     <style>
+         /* element selector */
+         p{
+             color: aquamarine;
+         }
+         /* id selector */
+         /* #shows id , */
+         #redEl{
+             color: blue;
+         }
+         /* class selector */
+         /* . shows class */
+         .redbg{
+             background-color: brown;
+         }
+         /* Group selector */
+           span,footer{
+               background-color: rgb(179, 160, 160);
+           }
+     </style>
+    
+</head>
+<body>
+    <h3>CSS selector</h3>
+    <p>This is the simple paragraph to demonstrate css selector</p>
+    <p>This is the  second simple paragraph to demonstrate css selector</p>    
+    
+    <div>
+        <p id="redEl">This is the second simple paragraph to demonstrate css selector</p>
+        <p id="redEl">This is the second simple paragraph to demonstrate css selector</p>
+    </div>
+        <p class="redbg">This is the  second simple paragraph to demonstrate css selector</p>    
+        <p class="redbg">This is the  second simple paragraph to demonstrate css selector</p>    
+    <div>
+         <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+</html>

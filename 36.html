@@ -1,0 +1,71 @@
+<!-- Document object model
+The HTML DOM (Document Object Model) is a standard object model and programming interface for HTML. It defines:
+
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements -->
+
+<!-- n other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-9</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More about us</li>
+            <li>Contact us</li>
+        </ul>
+        <div class="container">
+            There u go
+        </div>
+    </div>
+    <script>
+        // The most common way to access an HTML element is to use the id of the element 
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+
+        // For DOM to work, keep in mind that while selecting the elements with its id, there should be a unique id for every element in the HTML code. You cannot work with two same ids for different elements otherwise it will create a problem.
+
+
+        //    The easiest way to get the content of an element is by using the innerHTML property. It is useful for getting or replacing the content of HTML elements. (in the console window for e.g. nav.innerHTML +ENTER nd it will show the list of all the elemnts)
+
+
+        // However, we can also extract the elements from HTML with the help of class name. If we want to find all the elements with same class name, use getElementsByClassName(). 
+
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        // Here, we can see two container class as have made two container classes. But if we write as container(0) or container(1) then we will get the first and second containers respectively. 
+
+
+
+        // If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelector()  method
+
+        let sel=document.querySelector('#nav>li');
+        console.log("Selector returns",sel); 
+
+
+        let sel1=document.querySelectorAll('#nav>li');
+        console.log("Selector returns",sel1); 
+
+
+
+    </script>
+</body>
+
+</html>

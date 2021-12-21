@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-2</title>
+    <style>
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* 1px=1/96inch ,px(pixel) unit of font size*/
+            /* em- */
+            font-size: 23px;
+            /* The font weight property sets how thick or thin character in text should be displayed. */
+            font-weight: bold;
+            /* Line-height is the spacing between the fonts (current font and previous font). */
+            line-height: 1.3em;
+        }
+        span{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.2em;
+        }
+        #firs{
+            color: cadetblue;
+        }
+        #holi{
+            color: darkmagenta;
+        }
+        /* rgb-red green blue   ,ranges from 0 to 255 */
+        #happy{
+            color: rgb(rgb(206, 50, 50), rgb(97, 240, 97), rgb(28, 28, 100));
+        }
+        /* hex-colors */
+        h2{
+            color: #ffff;
+            background-color: #ff88ff;
+        }
+        /* we will rgb property more often */
+        h1{
+            background-color: rgb(206, 50, 50);
+            height: 100px;
+            width: 500px;
+            border-color: rgb(28, 28, 100);
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 10px;
+        }
+        /* border width color and style can be written combined */
+       h3{
+           border: 2px red solid;
+           background-color: rgb(97, 240, 97);
+           border-top:4px royalblue solid;
+           border-bottom: 3px chocolate solid;
+           border-bottom-right-radius: 12px;
+           border-top-left-radius: 13px;
+       } 
+       #para{
+            height: 600px;
+            width: 600px;
+            background-color: cyan;
+            border: 2px red solid;
+            background-image: url(https://unsplash.com/photos/Ss5xmcFoMUE/download?force=true);
+            background-repeat: no-repeat;
+            /* background-position-x: center; */
+            /* background-position-y: center; */
+            background-position: center center;
+       }
+
+
+       .paragraph{
+           height: 200px;
+           width: 300px;
+       }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Fonts  -->
+    <h2>CSS fonts</h2>
+    <p>Lets play with fonts</p>
+    <span>This is span</span>
+
+    <!-- COLORS -->
+    <h2>CSS colors</h2>
+    <p id="firs">Lets play with colors</p>
+    <div>
+        <p id="holi">holi hai</p>
+    </div>
+    <div >
+        <p id="happy">HAPPY HOLI</p>
+    </div>
+
+    <h2>lets learn hex color property</h2>
+
+    <!-- Border and Background -->
+    <h1>Lets discuss border and background</h1>
+    <h3>Lets talk about height and width</h3>
+    <div>
+        <p id="para">Lets see some more property  on border and background</p>
+    </div>
+
+</body>
+</html>
